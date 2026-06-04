@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola, soy Julián</title>
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <img src="../assets/logoJG_SF.png" alt="Logo de Julián" width="200" class="logo">
+        <nav class="links_nav">
+            <a href="../index.html">Inicio</a>
+            <a href="projects.html" class="active">Proyectos</a>
+            <a href="skills.html">Habilidades</a>
+            <a href="contact.html">Contacto</a>
+        </nav>
+    </header>
+    <main>
+
+        <section class="projects">
+            <h1 class="tittle-projects">Proyectos Destacados</h1>
+            <div class="project-inspiration">
+                <h2>Portal Web - Inspiration Church</h2>
+                <img src="../assets/inspiration.jpeg" alt="logo plataforma inspiration church" class="img-inspiration">
+                <p>Diseño y desarrollo integral de la plataforma web oficial de la organización comunitaria "Inspiration
+                    Church". El proyecto consta de dos grandes componentes: un sitio público informativo 
+                    (eventos, blogs, transmisión multimedia) y un portal de ingreso privado (intranet) exclusivo para los miembros activos...</p>
+                <div class="footer-inspiration">
+                    <span> React</span><span> Node.js</span><span> MongoDB</span>
+                    <label for="modal-trigger-inspiration" class="btn-ver-mas">Ver más</label>
+                </div>
+            </div>
+
+            <div class="project-medimerkar">
+                <h2>Sistema POS y ERP integral - Medimerkar</h2>
+                <img src="../assets/medimerkar.jpeg" alt="logo plataforma medimerkar" class="img-medimerkar">
+                <p>Desarrollo de un sistema de Punto de Venta (POS) y automatización de procesos para la cadena de
+                    supermercados "Medimerkar"...</p>
+                <div class="footer-medimerkar">
+                    <span>React.js</span><span>.NET Core</span><span>PostgreSQL</span>
+                    <label for="modal-trigger-medimerkar" class="btn-ver-mas">Ver más</label>
+                </div>
+            </div>
+            <div class="project-educonnect">
+                <h2>Educonnect - Sistema de gestión de aprendizaje</h2>
+                <img src="../assets/educonnect.jpeg" alt="logo plataforma educonnect" class="img-educonnect">
+                <p>Desarrollo de una plataforma educativa web diseñada para instituciones medianas. Permite la creación de cursos, 
+                   carga de material multimedia, entrega de tareas y cuenta con un módulo de comunicación en vivo (chats y foros de discusión) para fomentar la interacción entre estudiantes y profesores...</p>
+                <div class="footer-educonnect">
+                    <span>Angular</span><span>.NET Core</span><span>SQL Server</span>
+                    <label for="modal-trigger-educonnect" class="btn-ver-mas">Ver más</label>
+                </div>
+            </div>
+
+            <!-- Creación de checkboxes para los proyectos -->
+            <input type="checkbox" id="modal-trigger-inspiration" class="modal-checkbox">
+            <div class="modal-inspiration">
+                <div class="modal-content">
+                    <h2>Portal Web - Inspiration Church</h2>
+                    <p>Diseño y desarrollo integral de la plataforma web oficial de la organización comunitaria
+                        "Inspiration Church". Este proyecto incluyó la creación de un sitio web dinámico y responsivo
+                        utilizando React para el frontend, Node.js para el backend y MongoDB como base de datos. La plataforma
+                        permite a los usuarios acceder a información sobre eventos, servicios, recursos y actividades de la
+                        iglesia, así como facilitar la interacción con la comunidad a través de formularios de contacto y
+                        suscripción a boletines.
+                        <br><br>Desafío Técnico: Implementar un sistema robusto de autenticación y autorización de
+                        usuarios (manejo de roles), garantizando la seguridad de los datos personales. Además, se
+                        integró un módulo de base de datos optimizado para manejar agendas de eventos concurrentes y la
+                        carga eficiente de recursos multimedia.
+                    </p>
+                    
+                    <label for="modal-trigger-inspiration" class="btn-close">Cerrar</label>
+                </div>
+
+            </div>
+            <input type="checkbox" id="modal-trigger-medimerkar" class="modal-checkbox">
+            <div class="modal-medimerkar">
+                <div class="modal-content">
+                    <h2>Sistema POS y ERP integral - Medimerkar</h2>
+                    <p>Desarrollo de un sistema de Punto de Venta (POS) y automatización de procesos para la cadena de
+                        supermercados "Medimerkar". La plataforma centraliza en una sola interfaz web tres pilares
+                        críticos del negocio: la contabilidad automatizada (registro de transacciones, caja diaria y
+                        reportes financieros), el control de inventarios en tiempo real (alertas de stock bajo, entrada
+                        y salida de mercancía) y la gestión de nómina para el personal de las diferentes sucursales.
+                    <br><br>Desafío Técnico: Diseñar una arquitectura de base de datos altamente relacional y optimizada
+                    para procesar un alto volumen de transacciones simultáneas sin perder rendimiento. El mayor reto
+                    consistió en la automatización de la lógica contable (procesos ETL internos) para que cada venta
+                    afecte inmediatamente los niveles de inventario y los balances financieros de la empresa de manera
+                    exacta.</p>
+
+                    <label for="modal-trigger-medimerkar" class="btn-close">Cerrar</label>
+                </div>
+
+            </div>
+            <input type="checkbox" id="modal-trigger-educonnect" class="modal-checkbox">
+            <div class="modal-educonnect">
+                <div class="modal-content">
+                    <h2>Sistema de gestión de aprendizaje - Educonnect</h2>
+                    <p>Desarrollo de una plataforma educativa web diseñada para instituciones medianas. Permite la
+                        creación de cursos, carga de material multimedia, entrega de tareas y cuenta con un módulo de
+                        comunicación en vivo (chats y foros de discusión) para fomentar la interacción entre estudiantes
+                        y profesores.
+                        <br><br>Desafío Técnico: Garantizar la seguridad y el control de accesos mediante roles de
+                        usuario estrictos (Administrador, Profesor, Estudiante) y optimizar la carga de archivos
+                        multimedia pesados en el servidor.</p>
+
+                    <label for="modal-trigger-educonnect" class="btn-close">Cerrar</label>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+
+
+    <footer>
+        <p class="footer-description">&copy; 2024 Julián Garzón. Todos los derechos reservados.</p>
+        <nav class="social_links">
+            <ul>
+                <li><a href="https://www.linkedin.com/in/juliangarzon261b91119/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/Jgarzon08" target="_blank">GitHub</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>
