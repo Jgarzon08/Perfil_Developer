@@ -19,11 +19,50 @@
             <a href="contact.html" class="active">Contacto</a>
         </nav>
     </header>
-    <section class="contact">
-        <h1>Contacto</h1>
-        <p>¡Contáctame para colaborar en tu próximo proyecto!</p>
-        <!-- Contact form will be added here -->
-    </section>
+    <main class="contact-main">
+        <section class="contact-card">
+            
+            <div class="contact-info">
+                <h2>Trabajemos Juntos</h2>
+                <p class="contact-subtitle">¿Listo para dar el siguiente salto digital? Hablemos sobre las especificaciones de tu proyecto.</p>
+                
+                <div class="contact-details">
+                    <div class="detail-item">
+                        <span class="contact-icon">✉</span>
+                        <a href="mailto:julian.garzon08@gmail.com">julian.garzon08@gmail.com</a>
+                    </div>
+                    <div class="detail-item">
+                        <span class="contact-icon">📍</span>
+                        <span>Bogotá / Colombia</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-container">
+                <form class="contact-form" action="#" method="POST">
+                    
+                    <div class="input-group">
+                        <label for="name">Nombre</label>
+                        <input type="text" id="name" name="name" required placeholder="Tu nombre...">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="tu@correo.com">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Cuéntame sobre tu proyecto..."></textarea>
+                    </div>
+
+                    <label class="btn-submit" for="submit">Enviar</label>
+                    
+                </form>
+            </div>
+
+        </section>
+    </main>
 
      <footer>
         <p class="footer-description">&copy; 2024 Julián Garzón. Todos los derechos reservados.</p>
